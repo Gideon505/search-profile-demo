@@ -1,7 +1,7 @@
 // import person from person js file
 import person from './person.js';
 
-// get input and dsiplay in empty string
+// get input and display in empty string
 
 let searchResult = '';
 

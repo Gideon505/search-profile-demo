@@ -1,5 +1,9 @@
-// import person from person js file
-import person from './person.js';
+// import person from json file
+
+const module = await import("../JSON/person.json", {
+    with: {type: "json", },
+});
+console.log(module.default.person);
 
 // get input and display in empty string
 

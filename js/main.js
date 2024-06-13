@@ -1,9 +1,6 @@
 // import person from json file
-
-const module = await import("../JSON/person.json", {
-    with: {type: "json", },
-});
-console.log(module.default.person);
+import { default as employee } from "./employee.js";
+console.log(employee);
 
 // get input and display in empty string
 
@@ -12,6 +9,8 @@ let searchResult = '';
 document.getElementById('search').addEventListener('input', function(e) {
 
     searchResult = e.target.value;
+
+    
     displayResult(searchResult);
 
 });

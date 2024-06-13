@@ -1,5 +1,5 @@
 // import person from json file
-import { default as employee } from "./employee.js";
+import { default as employee } from "../module/employee.js";
 console.log(employee);
 
 // get input and display in empty string
@@ -10,7 +10,6 @@ document.getElementById('search').addEventListener('input', function(e) {
 
     searchResult = e.target.value;
 
-    
     displayResult(searchResult);
 
 });
@@ -18,7 +17,6 @@ document.getElementById('search').addEventListener('input', function(e) {
 const displayResult = (result) => {
     document.getElementById('display').textContent = result;
 }
-
 
 
 
